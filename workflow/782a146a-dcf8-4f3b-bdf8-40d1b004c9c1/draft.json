@@ -1,0 +1,265 @@
+{
+ "entityType": "workflow",
+ "data": {
+  "testedAt": "2025-11-04T12:52:18.229Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "createdAt": "2025-11-04T12:51:07.173Z",
+  "updatedAt": "2025-11-04T12:52:18.230543Z",
+  "isDeleted": false,
+  "entityId": "782a146a-dcf8-4f3b-bdf8-40d1b004c9c1",
+  "name": "hj",
+  "commitId": "commit-c76971b6-8b64-4510-bfaf-4a61c7ee54f0",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-11-04 12:51:07",
+   "timeStamp": "2025-11-04T12:51:07.173887217Z"
+  },
+  "startNode": "n_uCqKQ1",
+  "version": "draft",
+  "description": "",
+  "trigger": {
+   
+  },
+  "nodes": [
+   {
+    "position": {
+     "y": 0,
+     "x": 560.6018676757812
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": {
+      "hhj": {
+       "executedValue": "hjk",
+       "name": "hhj",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "hhj": "hjk"
+     },
+     "settings": {
+      "authType": "private",
+      "cacheKeys": "",
+      "isEnabled": true,
+      "cacheEnabled": false,
+      "durationUnit": "d",
+      "durationValue": 0
+     },
+     "nodeType": "apiTrigger",
+     "name": "Trigger",
+     "runInLoop": {
+      
+     },
+     "blockName": "trigger",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 130
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_Jfcv1J",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 410
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_rJESwO",
+    "type": "responseNode",
+    "data": {
+     "input": {
+      "key_0": {
+       "value": "Value",
+       "executedValue": "Value",
+       "name": "key_0",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "error": "",
+      "output": {
+       "key_0": "Value"
+      }
+     },
+     "settings": {
+      "timeoutAsync": 20,
+      "errorContinue": false,
+      "timeout": 10
+     },
+     "nodeType": "responseNode",
+     "entity": "responseNode",
+     "entityId": "n_rJESwO",
+     "status": "success",
+     "name": "Response",
+     "runInLoop": {
+      
+     },
+     "blockName": "response",
+     "testedAt": "2025-11-04T12:52:05.976Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 540
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_mjzILe",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 205
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_uCqKQ1",
+    "type": "setVarNode",
+    "data": {
+     "input": {
+      "key_0": {
+       "value": "n",
+       "executedValue": "n",
+       "name": "key_0",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "error": "nodeId n_uCqKQ1 not found"
+     },
+     "settings": {
+      "errorContinue": false
+     },
+     "nodeType": "setVarNode",
+     "entity": "setVariableNode",
+     "entityId": "n_uCqKQ1",
+     "status": "error",
+     "name": "SetVariable",
+     "runInLoop": {
+      
+     },
+     "blockName": "setVariable",
+     "testedAt": "2025-11-04T12:52:18.229Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 335
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_jzNeOt",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "strokeWidth": 1,
+     "stroke": "gray"
+    },
+    "id": "e_Q1fRuC",
+    "source": "1",
+    "target": "n_Jfcv1J",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_7u6DNx",
+    "source": "n_rJESwO",
+    "target": "n_mjzILe",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_uzcdSM",
+    "source": "n_jzNeOt",
+    "target": "n_rJESwO",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_5Mu7h6",
+    "source": "n_uCqKQ1",
+    "target": "n_jzNeOt",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_vfcy18",
+    "source": "n_Jfcv1J",
+    "target": "n_uCqKQ1",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   
+  },
+  "isDemo": false
+ }
+}
